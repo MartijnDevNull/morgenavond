@@ -20,7 +20,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:25px;
+    margin: 25px;
+}
+
+.rolldown-list li {
+    display: block;
+    list-style: none;
+    text-transform: uppercase;
+    visibility: hidden;
+    animation: rolldown .4s 1, typing 0.8s steps(21, end);
+    transform-origin: 0;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+@keyframes rolldown {
+    0% {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+    100% {
+        visibility: visible;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
 }
 
 .waves {
@@ -38,7 +69,10 @@
     text-align: right;
     font-size: 170%;
     grid-area: tomorrow;
+    -webkit-animation: typing 1s steps(21, end),
+    blink-caret .5s step-end infinite alternate;
 }
+
 .slogan {
     padding-top: 12%;
     margin-left: 28%;
@@ -61,6 +95,7 @@
     height: 250px;
     width: 380px;
 }
+
 .location {
     display: grid;
     grid-template-rows: 1fr 1fr;
