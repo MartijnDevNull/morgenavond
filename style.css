@@ -1,0 +1,86 @@
+@font-face {
+    font-family: HelvectiaNeueL;
+    font-style: normal;
+    src: url("fonts/HelveticaNeueLTStd-BdEx.woff") format("woff"), url("fonts/HelveticaNeueLTStd-BdEx.ttf") format("truetype");
+}
+
+.poster {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 32.25% 32.25% 35.5% 1:1:~1.1 */
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "waves  tomorrow" "waves  info";
+    grid-column-gap: 10px;
+    height: 95vmin;
+    font-family: 'HelvectiaNeueL', sans-serif;
+    font-weight: bold;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:25px;
+}
+
+.waves {
+    grid-area: waves;
+    background: url('img/wavescropped.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 410px;
+}
+
+.tomorrow {
+    text-align: right;
+    font-size: 170%;
+    grid-area: tomorrow;
+}
+.slogan {
+    padding-top: 12%;
+    margin-left: 28%;
+    font-size: 350%;
+    font-weight: bold;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.eggs {
+    width: 10vw;
+    position: relative;
+    left: 8%;
+    right: 10%;
+    top: 7%;
+    margin-left: -8vw;
+}
+
+.eggs img {
+    height: 250px;
+    width: 380px;
+}
+.location {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.locationInformation {
+    color: #ed9296;
+    display: flex;
+    align-items: center;
+    font-size: 90%;
+}
+
+.info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.sideways {
+    writing-mode: vertical-rl;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
