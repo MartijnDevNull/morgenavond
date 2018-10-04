@@ -60,10 +60,19 @@ $('.rolldown-list li').each(function () {
         var eggs = document.getElementById("eggs");
         eggs.style.display = "none";
         glitch.style.display = "block";
+        var flip = Math.random() >= 0.5;
         setTimeout(function () {
+            if (flip) {
+                glitch.style.transform = "scaleX(-1)";
+                glitch.style.webkitTransform = "scaleX(-1)";
+            }
             eggs.style.display = "block";
             glitch.style.display = "none";
         }, Math.round(Math.random() * (2500 - 2000)) + 2000);
+        if (flip) {
+            glitch.style.transform = "scaleX(1)";
+            glitch.style.webkitTransform = "scaleX(1)";
+        }
         loop();
     }, rand);
 }());
