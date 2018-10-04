@@ -61,10 +61,15 @@ $('.rolldown-list li').each(function () {
         eggs.style.display = "none";
         glitch.style.display = "block";
         var flip = Math.random() >= 0.5;
+        var rotate = Math.random() >= 0.5;
         setTimeout(function () {
             if (flip) {
                 glitch.style.transform = "scaleX(-1)";
                 glitch.style.webkitTransform = "scaleX(-1)";
+            }
+            if (rotate) {
+                glitch.style.transform = "rotate(180deg)";
+                glitch.style.webkitTransform = "rotate(180deg)";
             }
             eggs.style.display = "block";
             glitch.style.display = "none";
@@ -72,6 +77,10 @@ $('.rolldown-list li').each(function () {
         if (flip) {
             glitch.style.transform = "scaleX(1)";
             glitch.style.webkitTransform = "scaleX(1)";
+        }
+        if (rotate) {
+            glitch.style.transform = "rotate(180deg)";
+            glitch.style.webkitTransform = "rotate(180deg)";
         }
         loop();
     }, rand);
