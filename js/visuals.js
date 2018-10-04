@@ -10,7 +10,7 @@ $('.rolldown-list li').each(function () {
     });
 });
 
-(function() {
+(function () {
     var Glitch, glitch;
 
     Glitch = class Glitch {
@@ -44,10 +44,26 @@ $('.rolldown-list li').each(function () {
 
     glitch = new Glitch({
         img: document.getElementById("glitch"),
-        maxGlitch: 20,
+        maxGlitch: 100,
         offset: 20000
     });
 
     glitch.init();
 
 }).call(this);
+
+(function loop() {
+    var rand = Math.round(Math.random() * (7000 - 5000)) + 5000;
+    console.log(rand);
+    setTimeout(function () {
+        var glitch = document.getElementById("glitch");
+        var eggs = document.getElementById("eggs");
+        eggs.style.display = "none";
+        glitch.style.display = "block";
+        setTimeout(function () {
+            eggs.style.display = "block";
+            glitch.style.display = "none";
+        }, Math.round(Math.random() * (2500 - 2000)) + 2000);
+        loop();
+    }, rand);
+}());

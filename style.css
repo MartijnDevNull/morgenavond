@@ -23,6 +23,10 @@
     margin: 25px;
 }
 
+.hide {
+    display: none;
+}
+
 .rolldown-list li {
     display: block;
     list-style: none;
