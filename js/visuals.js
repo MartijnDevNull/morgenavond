@@ -54,7 +54,6 @@ $('.rolldown-list li').each(function () {
 
 (function loop() {
     var rand = Math.round(Math.random() * (7000 - 5000)) + 5000;
-    console.log(rand);
     setTimeout(function () {
         var glitch = document.getElementById("glitch");
         var eggs = document.getElementById("eggs");
