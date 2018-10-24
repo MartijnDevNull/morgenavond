@@ -16,21 +16,17 @@
     font-weight: bolder;
 }
 
+@media only screen and (max-width: 600px) {
+    .center {
+        display: inline;
+    }
+}
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-}
-
-.hide {
-    display: none;
-}
-
-@media only screen and (max-width: 600px) {
-    .rolldown-list li {
-        margin-bottom: 20px;
-    }
 }
 
 .rolldown-list li {
@@ -44,6 +40,7 @@
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 
@@ -83,8 +80,7 @@
 }
 
 .slogan {
-    padding-top: 12%;
-    margin-left: 9%;
+    /*padding-top: 12%;*/
     font-size: 350%;
     font-weight: normal;
     overflow: hidden;
@@ -101,8 +97,8 @@
 }
 
 .eggs img {
-    max-width: 20.5vw;
-    min-width: 300px;
+    max-width: 15vw;
+    min-width: 250px;
     height: auto;
     z-index: 1;
     position: absolute;

@@ -56,9 +56,6 @@ $('.rolldown-list li').each(function () {
     var rand = Math.round(Math.random() * (7000 - 5000)) + 5000;
     setTimeout(function () {
         var glitch = document.getElementById("glitch");
-        var eggs = document.getElementById("eggs");
-        eggs.style.display = "none";
-        glitch.style.display = "block";
         var flip = Math.random() >= 0.5;
         var rotate = Math.random() >= 0.5;
         setTimeout(function () {
@@ -70,8 +67,6 @@ $('.rolldown-list li').each(function () {
                 glitch.style.transform = "rotate(180deg)";
                 glitch.style.webkitTransform = "rotate(180deg)";
             }
-            eggs.style.display = "block";
-            glitch.style.display = "none";
         }, Math.round(Math.random() * (2500 - 2000)) + 2000);
         if (flip) {
             glitch.style.transform = "scaleX(1)";
