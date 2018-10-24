@@ -24,10 +24,10 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .center {
-        display: inline;
-        padding-top: 10px;
-    }
+    /*.center {*/
+        /*display: inline;*/
+        /*padding-top: 10px;*/
+    /*}*/
 }
 
 .rolldown-list li {
@@ -80,7 +80,6 @@
 }
 
 .slogan {
-    /*padding-top: 12%;*/
     font-size: 350%;
     font-weight: normal;
     overflow: hidden;
