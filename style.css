@@ -24,10 +24,22 @@
 }
 
 @media only screen and (max-width: 800px) {
-    /*.center {*/
-        /*display: inline;*/
-        /*padding-top: 10px;*/
-    /*}*/
+    .center {
+        display: flex;
+        padding-top: 10px;
+    }
+    .tomorrow {
+        font-size: medium !important;
+    }
+    .slogan {
+        font-size: 150% !important;
+    }
+    .locationInformation {
+        font-size: 60% !important;
+    }
+    .eggs img {
+        min-width: 170px !important;
+    }
 }
 
 .rolldown-list li {
