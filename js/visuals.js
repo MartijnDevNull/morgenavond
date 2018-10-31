@@ -79,3 +79,8 @@ $('.rolldown-list li').each(function () {
         loop();
     }, rand);
 }());
+
+function playMusic() {
+    var audio = document.getElementById("music");
+    audio.play();
+}
