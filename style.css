@@ -36,8 +36,8 @@
         font-size: 55% !important;
     }
     .eggs {
-        left: 5%;
-        margin-left: -5vw;
+        right: 13%;
+        margin-right: -13vw;
     }
     .eggs img {
         min-width: 170px !important;
